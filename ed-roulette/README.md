@@ -19,19 +19,10 @@ Rank range, starting percent, percent increase, AREDL legacy levels, and the two
 - AREDL: `https://api.aredl.net/v2/api/aredl/levels`
 - Rated+: `https://pointercrate.com/api/v2/demons/listed/?rated_plus=true`  **(unverified)**
 
-The Pointercrate API docs only cover the main list, and Rated+ support in Pointercrate's API
-isn't documented yet. The Rated+ URL is therefore a setting. To find the real endpoint, open
-https://pointercrate.com/ratedplus/ in a browser, open dev tools -> Network, and look for the
-request that loads the list, then paste that URL into the "Rated+ API URL" setting. The mod
-expects a JSON array of objects with `level_id`, `name` and `position`, and pages through it
-with `limit=100&after=<position>`.
-
 ## Building
 
-Install the Geode SDK and CLI, then:
-
-```
 geode build
-```
 
-Before publishing, change `id` and `developer` in `mod.json`.
+5.11.0
+
+

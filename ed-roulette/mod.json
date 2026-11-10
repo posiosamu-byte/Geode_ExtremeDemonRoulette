@@ -1,14 +1,14 @@
 {
 	"geode": "5.11.0",
 	"gd": {
-		"win": "2.2080",
-		"android": "2.2080",
-		"mac": "2.2080",
-		"ios": "2.2080"
+		"win": "2.208",
+		"android": "2.208",
+		"mac": "2.208",
+		"ios": "2.208"
 	},
 	"id": "Shmuu.ed-roulette",
 	"name": "Extreme Demon Roulette",
-	"version": "v1.0.0",
+	"version": "v0.1.0",
 	"developer": "Shmuu",
 	"description": "Demon roulette using the AREDL or the Pointercrate Rated+ list.",
 	"tags": ["gameplay", "online", "enhancement"],

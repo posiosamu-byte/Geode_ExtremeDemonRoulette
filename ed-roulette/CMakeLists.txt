@@ -9,7 +9,7 @@ else()
     set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 endif()
 
-project(EDRoulette VERSION 1.0.0)
+project(EDRoulette VERSION 0.1.0 LANGUAGES CXX)
 
 file(GLOB SOURCES CONFIGURE_DEPENDS src/*.cpp)
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
