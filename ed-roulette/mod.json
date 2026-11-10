@@ -1,0 +1,67 @@
+{
+	"geode": "5.11.0",
+	"gd": {
+		"win": "2.2080",
+		"android": "2.2080",
+		"mac": "2.2080",
+		"ios": "2.2080"
+	},
+	"id": "Shmuu.ed-roulette",
+	"name": "Extreme Demon Roulette",
+	"version": "v1.0.0",
+	"developer": "Shmuu",
+	"description": "Demon roulette using the AREDL or the Pointercrate Rated+ list.",
+	"tags": ["gameplay", "online", "enhancement"],
+	"settings": {
+		"min-rank": {
+			"type": "int",
+			"name": "Minimum rank",
+			"description": "Lowest list position (hardest) that can be rolled.",
+			"default": 1,
+			"min": 1,
+			"max": 1000
+		},
+		"max-rank": {
+			"type": "int",
+			"name": "Maximum rank",
+			"description": "Highest list position (easiest) that can be rolled.",
+			"default": 75,
+			"min": 1,
+			"max": 1000
+		},
+		"start-percent": {
+			"type": "int",
+			"name": "Starting percent",
+			"description": "Percent required on the first level.",
+			"default": 1,
+			"min": 1,
+			"max": 100
+		},
+		"percent-step": {
+			"type": "int",
+			"name": "Percent increase",
+			"description": "How much the required percent goes up after each cleared level.",
+			"default": 1,
+			"min": 0,
+			"max": 10
+		},
+		"include-legacy": {
+			"type": "bool",
+			"name": "Include AREDL legacy levels",
+			"description": "Allow levels flagged as legacy on the AREDL.",
+			"default": false
+		},
+		"aredl-url": {
+			"type": "string",
+			"name": "AREDL API URL",
+			"description": "Endpoint returning the AREDL level list as a JSON array.",
+			"default": "https://api.aredl.net/v2/api/aredl/levels"
+		},
+		"rated-plus-url": {
+			"type": "string",
+			"name": "Rated+ API URL",
+			"description": "Endpoint for the Pointercrate Rated+ list (same JSON format as /api/v2/demons/listed/). Change this if the default stops working.",
+			"default": "https://pointercrate.com/api/v2/demons/listed/?rated_plus=true"
+		}
+	}
+}
